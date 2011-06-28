@@ -42,7 +42,6 @@ var DataGrid = view.newClass('DataGrid', DataList, {
     pack.render([sample], [], 0);
     var height = pack.dom().offsetHeight;
     var width = pack.dom().offsetWidth;
-    console.log(height, width);
     this.removeChild(pack);
     return [width, height];
   },

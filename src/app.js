@@ -21,11 +21,11 @@ function formatter(object) {
 
 builder.build({
   view: 'Container',
-  pos: 't:10px l:10px r:10px b:90px',
+  pos: 't:10px l:10px r:10px b:180px',
   addClass: 'friendList',
   childViews: [{
     view: 'DataGrid',
-    pos: 't:0px b:0px r:0px l:0px',
+    pos: 't:0px r:0px l:0px',
     formatter: formatter
   }]
 }).attach();

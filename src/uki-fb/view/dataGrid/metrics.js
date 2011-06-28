@@ -23,7 +23,7 @@ var Metrics = fun.newClass(Observable, {
   initLayout: function() {
     var d = this._view.deduceCellDimensions();
     this._cellWidth = d[0];
-    this._cellHeight = d[0];
+    this._cellHeight = d[1];
     this._cellsPerRow = 0;
   },
 
