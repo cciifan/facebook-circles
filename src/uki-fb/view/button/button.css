@@ -1,0 +1,205 @@
+/**
+* Stripped down css from :ui:button
+*
+*/
+
+
+.uiButton,
+.uiButtonSuppressed:active,
+.uiButtonSuppressed:focus,
+.uiButtonSuppressed:hover {
+  background: #eee url(./button.png) repeat 0 0;
+  border: 1px solid #999;
+  border-bottom-color: #888;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  cursor: pointer;
+  display: -moz-inline-box;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: normal !important;
+  padding: 2px 6px;
+  *position: relative; /* Fixes missing border in IE */
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.uiButton + .uiButton {
+  margin-left: 4px;
+}
+
+.uiButton:hover {
+  text-decoration: none;
+}
+
+.uiButton:active,
+.uiButtonDepressed {
+  background: #ddd;
+  border-bottom-color: #999;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .05);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .05);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .05);
+}
+
+/* TODO(jsu): The margins and the .customimg classname aren't neccessary if
+ * vertical-align: middle is used. This currently can't be done because
+ * ui:selector needs to float the icon to the left when truncating text. */
+.uiButton .img {
+  margin-top: 2px;
+  vertical-align: top;
+}
+
+.uiButtonLarge .img {
+  margin-top: 4px;
+}
+
+.uiButton .customimg {
+  margin-top: 0px;
+}
+
+.uiButton .uiButtonText,
+.uiButton input {
+  background: none;
+  border: 0;
+  color: #333;
+  cursor: pointer;
+  display: -moz-inline-box;
+  display: inline-block;
+  font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0;
+  outline: none;
+  padding: 1px 0 2px;
+  white-space: nowrap;
+  _width: 0;
+}
+
+.uiButton input {
+  *overflow: visible; /* Normalizes padding on input */
+  *padding-bottom: 0;
+}
+
+.uiButton input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Types */
+
+.uiButtonSpecial {
+  background-color: #69a74e;
+  background-position: 0px -96px;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+}
+
+.uiButtonSpecial:active {
+  background: #609946;
+  border-bottom-color: #3b6e22;
+}
+
+.uiButtonSpecial.uiButtonDisabled,
+.uiButtonSpecial.uiButtonDisabled:active,
+.uiButtonSpecial.uiButtonDisabled:focus,
+.uiButtonSpecial.uiButtonDisabled:hover {
+  background: #b4d3a7;
+  border-color: #9db791;
+}
+
+.uiButtonConfirm {
+  background-color: #5b74a8;
+  background-position: 0px -48px;
+  border-color: #29447e #29447e #1a356e;
+}
+
+.uiButtonConfirm:active {
+  background: #4f6aa3;
+  border-bottom-color: #29447e;
+}
+
+.uiButtonConfirm.uiButtonDisabled,
+.uiButtonConfirm.uiButtonDisabled:active,
+.uiButtonConfirm.uiButtonDisabled:focus,
+.uiButtonConfirm.uiButtonDisabled:hover {
+  background: #adbad4;
+  border-color: #94a2bf;
+}
+
+.uiButtonSpecial .uiButtonText,
+.uiButtonSpecial input,
+.uiButtonSpecial.uiButtonDisabled .uiButtonText,
+.uiButtonSpecial.uiButtonDisabled input,
+.uiButtonConfirm .uiButtonText,
+.uiButtonConfirm input,
+.uiButtonConfirm.uiButtonDisabled .uiButtonText,
+.uiButtonConfirm.uiButtonDisabled input {
+  color: #fff;
+}
+
+/* Disabled */
+
+.uiButtonDisabled,
+.uiButtonDisabled:active,
+.uiButtonDisabled:focus,
+.uiButtonDisabled:hover {
+  background: #f2f2f2;
+  border-color: #c8c8c8;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.uiButtonDisabled .img {
+  opacity: 0.5;
+}
+
+.uiButtonDisabled .uiButtonText,
+.uiButtonDisabled input {
+  color: #b8b8b8;
+}
+
+.uiButtonDepressed,
+.uiButtonDepressed .uiButtonText,
+.uiButtonDepressed input,
+.uiButtonDisabled,
+.uiButtonDisabled .uiButtonText,
+.uiButtonDisabled input {
+  cursor: default;
+}
+
+/* Sizes */
+
+.uiButtonLarge,
+.uiButtonLarge .uiButtonText,
+.uiButtonLarge input {
+  font-size: 13px;
+}
+
+.uiButtonLarge input {
+  *margin-top: -1px;
+  *padding: 0;
+}
+
+/* Suppressed */
+
+.uiButtonSuppressed {
+  background: none;
+  border-color: transparent;
+  _border-color: #fff;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.uiButton .img {
+    margin-right: 5px;
+}
+
+.uiButtonNoText .img {
+  margin-left: -1px;
+  margin-right: -1px;
+}

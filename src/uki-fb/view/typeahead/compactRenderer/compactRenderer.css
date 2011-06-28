@@ -1,0 +1,51 @@
+/**
+*/
+
+/**
+ * CompactTypeaheadRenderer CSS
+ */
+
+.uiTypeaheadView .compact li {
+  _height: 32px;
+  min-height: 32px;
+  padding: 2px 10px 2px 45px;
+}
+
+.uiTypeaheadView .compact .splitpics,
+.uiTypeaheadView .compact img {
+  display: block;
+  height: 32px;
+  left: 6px;
+  position: absolute;
+  width: 32px;
+}
+
+.uiTypeaheadView .compact .text {
+  font-weight: bold;
+}
+
+.uiTypeaheadView .compact .details {
+  color: #999;
+  padding-top: 0px;
+}
+
+.uiTypeaheadView .compact .detailsContents {
+  position: relative;
+}
+
+.uiTypeaheadView .compact .splitpic {
+  float: left;
+  overflow: hidden;
+  width: 15px;
+}
+
+.uiTypeaheadView .compact .splitpics img {
+  left: 0px;
+  margin-left: -8px;
+  position: static;
+}
+
+.uiTypeaheadView .compact .splitpics .leftpic {
+  margin-right: 1px;
+  width: 16px;
+}

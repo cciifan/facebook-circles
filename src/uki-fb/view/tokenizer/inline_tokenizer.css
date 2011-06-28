@@ -1,0 +1,37 @@
+/**
+*/
+
+.uiInlineTokenizer {
+  cursor: text;
+  padding-left: 2px;
+  border: 1px solid #bdc7d8;
+}
+
+.uiInlineTokenizer .tokenarea {
+  *padding-bottom: 1px;
+}
+
+.uiInlineTokenizer .uiToken {
+  top: 2px;
+}
+
+.uiInlineTokenizer .uiTypeahead {
+  border: 0;
+  float: left;
+}
+
+.uiInlineTokenizer.uiTokenizerEmpty .uiTypeahead {
+  float: none;
+}
+
+.uiInlineTokenizer .uiTypeahead .wrap {
+  border: 0;
+}
+
+.uiInlineTokenizer .uiTypeaheadView {
+  width: 200px;
+}
+
+.uiInlineTokenizer .textInput[disabled] {
+  background: #fff;
+}

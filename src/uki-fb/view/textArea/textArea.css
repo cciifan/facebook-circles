@@ -1,0 +1,10 @@
+/**
+*/
+
+.uiTextareaNoResize {
+  resize: none;
+}
+
+.uiTextareaAutogrow {
+  overflow: hidden;
+}

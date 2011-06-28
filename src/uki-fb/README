@@ -1,0 +1,21 @@
+VERSION INFO
+
+early   Might not even work. Probably untested or tested once in
+draft   a particular condition. May server as placeholder for later
+        implementation. BEWARE!
+
+draft   Both API and code are VERY unstable. Likely to be changed
+        considerably or removed/replaced. Use at you're own risk.
+        Redundant code, especially CSS, may be present. Should
+        work at least on latest webkit/gecko browsers in a particular
+        scenario.
+
+alpha   API is mostly stable. Code is relatively untested.
+        Small changes to public API are possible though unlikely.
+        Code and protected API is likely to change.
+        Should work at least on latest webkit/gecko browsers.
+
+1.0     API is fixed within 1.* range. Methods may be added but
+        not changed or removed. Protected API is unlikely to change.
+        Should work on latest webkit, gecko, trident, opera browsers.
+

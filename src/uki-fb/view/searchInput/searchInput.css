@@ -1,0 +1,82 @@
+/**
+* Copyright 2004-present Facebook. All Rights Reserved.
+*
+*/
+
+
+.searchInput {
+    background: #fff;
+    border: 1px solid #899bc1;
+    border-top-color: #6484b4;
+    display: inline-block;
+    -webkit-box-shadow: inset 0 1px 1px #ededed;
+    -moz-box-shadow: inset 0 1px 1px #ededed;
+    box-shadow: inset 0 1px 1px #ededed;
+    padding: 2px 0;
+    position: relative;
+}
+
+.searchInput-input {
+    border: 0;
+    border-right: 1px solid #e5e5e5;
+    margin: 0 22px 0 5px;
+    outline: none;
+    padding: 1px 5px 2px 0;
+    vertical-align: top;
+/*    width: 190px;*/
+}
+
+.searchInput-button {
+    background: #FFF url(/js/uki-fb/view/searchInput/button.gif) 50% 50% no-repeat;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 19px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 22px;
+}
+
+/* Flex */
+.searchInput_flex {
+    display: block;
+    height: 16px;
+}
+
+.searchInput_flex .searchInput-input {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 2px;
+    right: 22px;
+    bottom: 2px;
+    left: 5px;
+}
+
+/* buttonless */
+.searchInput_buttonless {
+    padding-left: 0;
+}
+
+.searchInput_buttonless .searchInput-input {
+    background: #FFF url(/js/uki-fb/view/searchInput/button.gif) 0 -1px no-repeat;
+    padding-left: 22px;
+    margin: 0;
+    border-right: none;
+}
+
+.searchInput_buttonless .searchInput-button {
+    display: none;
+}
+
+.searchInput_buttonless.searchInput_flex .searchInput-input {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 2px;
+    right: 0px;
+    bottom: 2px;
+    left: 0px;
+}

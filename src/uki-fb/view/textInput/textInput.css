@@ -1,0 +1,14 @@
+/**
+*/
+
+.textInput {
+    -webkit-appearance: none;
+    border: 1px solid #BDC7D8;
+    border-bottom-left-radius: 0px 0px;
+    border-bottom-right-radius: 0px 0px;
+    border-top-left-radius: 0px 0px;
+    border-top-right-radius: 0px 0px;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    padding: 3px 3px 4px;
+}

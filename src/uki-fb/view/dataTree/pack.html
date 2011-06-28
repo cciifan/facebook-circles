@@ -1,0 +1,6 @@
+{{#rows}}<li class="uki-dataTree-row uki-dataList-row{{^even}} uki-dataList-row_odd{{/even}}{{className}}">
+  <div class="uki-dataTree-value"{{{style}}}>
+    {{#hasChildren}}<i class="uki-dataTree-toggle"></i>{{/hasChildren}}
+    {{{value}}}
+  </div>
+</li>{{/rows}}

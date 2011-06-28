@@ -1,0 +1,196 @@
+/**
+*/
+
+.uiSelector {
+  display: -moz-inline-box;
+  display: inline-block;
+  max-width: 200px; /* Needed for IE8. See task #261122 */
+  vertical-align: top;
+  /* In order to make block elements inline-block in IE, you need to set the
+   * display to inline after giving the element layout. */
+  zoom: 1;
+  *display: inline;
+}
+
+.uiSelector .wrap {
+  position: relative;
+}
+
+/* Button */
+
+.uiSelector .uiButton,
+.uiSelector .uiButton:active,
+.uiSelector .uiButton:focus,
+.uiSelector .uiButton:hover {
+  background-image: none;
+}
+
+.uiSelector .uiSelectorButton:active {
+  background-color: #ddd;
+}
+
+.uiSelector .openToggler .uiSelectorButton,
+.uiSelector .openToggler .uiSelectorButton:active,
+.uiSelector .openToggler .uiSelectorButton:focus,
+.uiSelector .openToggler .uiSelectorButton:hover {
+  background-color: #6d84b4;
+  border: 1px solid #3b5998;
+  border-bottom-color: #6d84b4;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.uiSelectorNormal .uiSelectorChevronOnly,
+.uiSelectorNormal .uiSelectorChevronOnly:active,
+.uiSelectorNormal .uiSelectorChevronOnly:focus,
+.uiSelectorNormal .uiSelectorChevronOnly:hover {
+  height: 20px;
+  padding: 0;
+}
+
+.uiSelectorNormal .uiSelectorButton,
+.uiSelectorNormal .uiSelectorButton:active,
+.uiSelectorNormal .uiSelectorButton:focus,
+.uiSelectorNormal .uiSelectorButton:hover,
+.uiSelectorNormal .uiButtonSuppressed:active,
+.uiSelectorNormal .uiButtonSuppressed:focus,
+.uiSelectorNormal .uiButtonSuppressed:hover {
+  background: url(./selector.png);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  max-width: 169px;
+  padding-right: 23px;
+}
+
+.uiSelectorNormal .uiButtonDisabled,
+.uiSelectorNormal label.uiButtonDisabled:active,
+.uiSelectorNormal label.uiButtonDisabled:focus,
+.uiSelectorNormal label.uiButtonDisabled:hover {
+  background-position: right -144px;
+}
+
+.uiSelectorNormal .uiButtonSuppressed.uiButtonDisabled {
+  background-position: right -193px;
+}
+
+.uiSelectorNormal .uiSelectorButton:active,
+.uiSelectorNormal .uiButtonSuppressed {
+  background-position: right -97px;
+}
+
+.uiSelectorNormal .openToggler .uiSelectorButton,
+.uiSelectorNormal .openToggler .uiSelectorButton:active,
+.uiSelectorNormal .openToggler .uiSelectorButton:focus,
+.uiSelectorNormal .openToggler .uiSelectorButton:hover,
+.uiSelectorNormal .openToggler .uiButtonSuppressed,
+.uiSelectorNormal .openToggler .uiButtonSuppressed:active,
+.uiSelectorNormal .openToggler .uiButtonSuppressed:focus,
+.uiSelectorNormal .openToggler .uiButtonSuppressed:hover {
+  background-position: right -48px;
+}
+
+/* There is no way to support this in IE7 RTL, so we just put the icon on the
+ * left side... because it feels less broken. */
+/* @noflip */
+.uiSelectorNormal .uiSelectorButton .img {
+  *float: left;
+}
+
+.uiSelectorNormal .uiSelectorButton .uiButtonInput {
+  max-width: 169px; /* Override if you want */
+  overflow: hidden;
+  _overflow: visible;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+/* uiSelectorBigButtonLabel is applied in PHP and JS when the label of the
+ * button exceeds a defined threshold (see the buttonlength attribute on
+ * ui:selector). This is required for IE6 compatibility and prevents premature
+ * text truncation in FF. */
+.uiSelectorNormal .uiSelectorBigButtonLabel .img {
+  float: left;
+  /* @noflip */
+  *float: left;
+}
+
+.uiSelectorNormal .uiSelectorBigButtonLabel .uiButtonInput {
+  display: block;
+  _overflow: hidden;
+  _width: 169px;
+}
+
+.uiSelectorNormal .openToggler .uiSelectorButton .uiButtonInput {
+  color: #fff;
+}
+
+/* Menu */
+
+.uiSelectorMenuWrapper {
+  bottom: auto;
+  left: 0;
+  margin-top: -1px;
+  max-width: 340px; /* Needed for IE8. See task #261122 */
+  min-width: 100%;
+  position: absolute;
+  right: auto;
+  top: 100%;
+  visibility: hidden;
+}
+
+.openToggler .uiSelectorMenuWrapper {
+  visibility: visible;
+  z-index: -1;
+}
+
+.uiSelectorRight .uiSelectorMenuWrapper {
+  left: auto;
+  right: 0;
+  _right: -1px;
+}
+
+.uiSelector .uiMenuItem .itemLabel {
+  max-width: 300px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+/**
+ * IE will not observe max-width on a node within an absolutely positioned
+ * element with overflow set to hidden. When a long string exists in a
+ * selector's menu, uiSelectorBigLabel forces a fixed width on the menu.
+ */
+.uiSelector .uiSelectorBigMenuLabel .itemLabel {
+  overflow: hidden;
+  min-width: 300px;
+  _width: 300px;
+}
+
+
+.uiSelector .uiSelectorMenu {
+    display: none;
+}
+
+.uiSelector .openToggler .uiSelectorMenu {
+    display: block;
+}
+
+.uiSelectorBottomUp .openToggler .uiSelectorButton,
+.uiSelectorBottomUp .openToggler .uiSelectorButton:active,
+.uiSelectorBottomUp .openToggler .uiSelectorButton:focus,
+.uiSelectorBottomUp .openToggler .uiSelectorButton:hover,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed:active,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed:focus,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed:hover {
+  border: 1px solid #3b5998;
+  border-top-color: #6d84b4;
+}
+
+.uiSelectorBottomUp .uiSelectorMenuWrapper {
+  bottom: 100%;
+  margin-bottom: -2px;
+  top: auto;
+}

@@ -1,0 +1,25 @@
+/**
+* :ui:pill-button
+*/
+
+.pillButton {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 15px;
+  padding: 1px 6px 2px;
+  color: #3B5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pillButton_selected {
+  background-color: #6d84b4;
+  border: 1px solid #3b5998;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  color: #fff;
+  cursor: default;
+  padding: 0 5px 1px;
+}

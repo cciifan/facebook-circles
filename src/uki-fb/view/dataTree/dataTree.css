@@ -1,0 +1,52 @@
+/**
+*/
+
+.uki-dataTree-value {
+  padding-left: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.uki-dataTree-toggle {
+  position: absolute;
+  display: block;
+  background: url(./arrows.png) 0 0
+  width: 10px;
+  height: 9px;
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+}
+
+.uki-dataList-row_selected .uki-dataTree-toggle {
+  background-position: -10px 0;
+}
+
+.uki-dataList_blured .uki-dataList-row_selected .uki-dataTree-toggle {
+  background-position: 0 0;
+}
+
+.uki-dataTree-row_opened .uki-dataTree-toggle {
+  background-position: 0 -9px;
+}
+
+.uki-dataList-row_selected.uki-dataTree-row_opened .uki-dataTree-toggle {
+  background-position: -10px -9px;
+}
+
+.uki-dataList_blured
+  .uki-dataList-row_selected.uki-dataTree-row_opened .uki-dataTree-toggle {
+  background-position: 0 -9px;
+}
+
+.uki-dataTree-value::-moz-selection {
+  background: rgba(0, 0, 0, 0);
+}
+.uki-dataTree-value::-webkit-selection {
+  background: rgba(0, 0, 0, 0);
+}
+.uki-dataTree-value::selection {
+  background: rgba(0, 0, 0, 0);
+}

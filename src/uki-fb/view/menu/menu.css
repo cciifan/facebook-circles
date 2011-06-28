@@ -1,0 +1,93 @@
+/**
+* Stripped :ui:menu code
+*/
+
+.uiMenu {
+  background-color: #fff;
+  border: 1px solid #777;
+  border-bottom: 2px solid #293e6a;
+  padding: 3px 0 4px;
+  list-style: none;
+}
+
+.uiMenuItem .itemLabel {
+    font-size: 11px;
+}
+
+.uiMenuItem .itemAnchor {
+  border: solid #fff;
+  border-width: 1px 0;
+  color: #111;
+  display: block;
+  font-weight: normal;
+  line-height: 16px;
+  padding: 1px 16px 1px 22px;
+  *padding: 0 16px 2px 22px;
+  text-decoration: none;
+}
+
+.uiMenuItem a:hover {
+  text-decoration: none;
+}
+
+.uiMenuItem a:active,
+.uiMenuItem a:focus {
+  background-color: #6d84b4;
+  border-color: #3b5998;
+  color: #fff;
+  outline: none;
+}
+
+.uiMenu .checked .itemAnchor {
+  background: #eee url(./check_ltr.png) repeat 0 0;
+  font-weight: bold;
+}
+
+.uiMenu .checked a:active,
+.uiMenu .checked a:focus {
+  background-color: #6d84b4;
+  background-position: left -56px;
+}
+
+.uiMenuItem .itemLabel {
+  display: block;
+  white-space: nowrap;
+}
+
+.uiMenuItem .disabledAnchor,
+.uiMenu .disabled .itemAnchor {
+  display: none;
+}
+
+.uiMenu .disabled .disabledAnchor {
+  display: block;
+}
+
+.uiMenu .disabled .itemAnchor {
+  -ms-filter: 'alpha(opacity=55)';
+  filter: alpha(opacity=55);
+  opacity: 0.55;
+}
+
+.uiMenuItemGroupItems {
+    list-style: none;
+    padding: 0;
+}
+
+.uiMenuItemGroup .groupTitle {
+  margin: 0 16px 3px 22px;
+}
+
+.uiMenuSeparator {
+  border-bottom: 1px solid #ddd;
+  *font-size: 0;
+  *line-height: 0;
+  margin: 5px 7px 6px;
+  *margin-top: 3px;
+  padding-top: 1px;
+}
+
+
+.uiMenu {
+    margin: 0;
+}

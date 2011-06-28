@@ -1,0 +1,67 @@
+/**
+*/
+
+.uiSideNav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.uiSideNav li {
+  position: relative;
+  zoom: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.uiSideNav .hidden {
+  display: none;
+}
+
+.uiSideNav .item {
+  color: #333;
+  display: block;
+  border-bottom: 1px solid #fff;
+  line-height: 13px;
+  padding: 3px 8px 4px 28px;
+  position: relative;
+  text-decoration: none;
+  zoom: 1;
+}
+
+.uiSideNav .noIcon {
+    padding-left: 5px !important;
+}
+
+.uiSideNav .item:hover,
+.uiSideNav .item:active,
+.uiSideNav .item:focus {
+  background-color: #eff2f7;
+  text-decoration: none;
+}
+
+.uiSideNav .selectedItem .item,
+.uiSideNav .selectedItem .item:hover {
+  background-color: #d8dfea;
+  font-weight: bold;
+}
+
+.uiSideNav .item .imgWrap {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  text-align: center;
+  width: 18px;
+}
+
+/* Counts and Loading */
+
+.uiSideNav .count {
+  color: #808080;
+}
+
+/* Hidden subitems */
+
+.uiSideNav .uiBubbleCount {
+  margin-left: 2px;
+}

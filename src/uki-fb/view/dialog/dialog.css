@@ -1,0 +1,83 @@
+/**
+*/
+
+
+.dialog-wrapper {
+    width: 100%;
+    position: absolute;
+    z-index: 205;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: visible;
+}
+
+.dialog {
+    width: 445px;
+    margin: 125px auto 0 auto;
+    padding: 10px;
+    position: relative;
+    left: 0; top: 0;
+    overflow: visible;
+}
+
+.dialog-bg {
+    background: #000;
+    opacity: 0.4;
+    border-radius: 8px;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.dialog_wide {
+    width: 555px;
+}
+
+.dialog-overlay {
+    height: 100%;
+    opacity: 0.5;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 204;
+    background: white;
+}
+
+.dialogContent {
+    border: 1px solid #555;
+    border-width: 0 1px 1px 1px;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+.dialogHeader {
+    background: #6D84B4;
+    border: 1px solid #3B5998;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.dialogHeader .text-content {
+    display: block;
+    padding: 5px 10px;
+    color: white !important;
+}
+
+.dialogFooter {
+    text-align: right;
+    padding: 8px 10px;
+    background: #F2F2F2;
+    border-top: 1px solid #CCC;
+}
+
+.dialogBody {
+    padding: 10px;
+}

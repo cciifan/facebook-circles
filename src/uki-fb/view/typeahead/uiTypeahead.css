@@ -1,0 +1,52 @@
+/**
+ * Typeahead CSS
+ *
+ */
+
+
+.uiTypeahead {
+  background: #fff;
+  border: solid #bdc7d8;
+  border-width: 1px 0;
+  cursor: default;
+  position: relative;
+}
+
+.uiTypeahead .wrap {
+  border: solid #bdc7d8;
+  border-width: 0 1px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.uiTypeahead .textInput {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.uiTypeahead .selected .textInput {
+  background: #e2e8f6;
+}
+
+.uiTypeaheadDisabled,
+.uiTypeaheadDisabled div.wrap {
+  border-color: #ccc;
+}
+
+.uiTypeaheadDisabled div.wrap .textInput {
+  background: #e2e2e2;
+  color: #333;
+}
+
+/**
+ * The currently focused Typeahead needs to sit above any other Typeaheads on
+ * the page. We can't simply add a z-index to the results div because IE is
+ * dumb, and has a terrible concept of rendering contexts. To alleviate this,
+ * we simply bump up the z-index of the entire Typeahead when it is focused.
+ */
+.uiTypeaheadFocused,
+.uiTypeaheadFocused .uiTypeahead {
+  z-index: 1;
+}

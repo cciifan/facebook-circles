@@ -1,0 +1,111 @@
+/**
+ * TypeaheadView CSS
+ */
+
+
+.uiTypeaheadView {
+  display: block;
+  left: 0px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 101;
+}
+
+.uiTypeaheadView ul {
+  background: #fff;
+  border: solid;
+  border-width: 1px 1px 2px;
+  border-color: #333 #333 #293e6a;
+  overflow: hidden;
+  padding: 2px 0;
+}
+
+.uiTypeaheadView li {
+  border: solid #fff;
+  border-width: 1px 0;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  _height: 1px;
+  min-height: 1px;
+  padding: 0px 6px;
+  position: relative;
+}
+
+.uiTypeaheadView strong {
+  background-color: #d8dfea;
+  color: #3b5998;
+}
+
+.uiTypeaheadView .selected {
+  background-color: #6d84b4;
+  border-color: #3b5998;
+}
+
+.uiTypeaheadView .selected,
+.uiTypeaheadView .selected a,
+.uiTypeaheadView .selected div,
+.uiTypeaheadView .selected span {
+  color: #fff !important;
+}
+
+.uiTypeaheadView .selected strong {
+  background-color: #5670a6;
+}
+
+.uiTypeaheadView .text,
+.uiTypeaheadView .subtext,
+.uiTypeaheadView .category {
+  display: block;
+  padding-bottom: 2px;
+}
+
+.uiTypeaheadView .category {
+  color: #666;
+}
+
+.uiTypeaheadView .subtext {
+  color: #999;
+}
+
+.uiTypeaheadView .arrow {
+  
+  display: inline-block;
+  height: 7px;
+  margin-left: 4px;
+  *vertical-align: middle;
+  width: 4px;
+}
+
+.uiTypeaheadView .selected .arrow {
+  background-position: 0px -420px;
+}
+
+.uiTypeahead .uiTypeaheadView .calltoaction {
+  background: #f7f7f7;
+  border-bottom: none;
+  border-color: #ddd;
+  display: block;
+  _height: 1px;
+  min-height: 1px;
+  margin: 2px 0 -2px;
+  padding: 8px;
+  text-align: center;
+}
+
+/* doesn't work correctly in ie6 but who cares */
+.uiTypeahead .uiTypeaheadView .calltoaction.selected {
+  background: #6d84b4;
+  border-color: #3b5998;
+}
+
+.typeaheadLoading .uiTypeaheadView .calltoaction span.text {
+  visibility: hidden;
+}
+
+.typeaheadLoading .uiTypeaheadView .calltoaction,
+.typeaheadLoading .uiTypeaheadView .calltoaction.selected {
+  
+  border-top: 1px solid #ddd;
+}

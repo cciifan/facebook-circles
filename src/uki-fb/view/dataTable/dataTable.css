@@ -1,0 +1,128 @@
+/**
+* Copyright 2004-present Facebook. All Rights Reserved.
+*
+*/
+
+.uki-dataTable-container {
+  overflow: auto;
+}
+
+.uki-dataTable-header,
+.uki-dataTable-pack {
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.uki-dataTable-pack {
+  width: 100%;
+}
+
+.uki-dataTable-row {
+  display: table-row;
+}
+
+.uki-dataTable-cell {
+  border: none;
+  padding: 2px 5px;
+  margin: 0;
+  height: 14px;
+  font-size: 11px;
+  line-height: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.uki-dataTable-row_selected {
+  background-color: #5b74a8;
+  color: #FFF;
+}
+
+.uki-dataTable-row_selected .uki-dataTable-cell {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-top: 1px solid #3B5998;
+  border-bottom: 1px solid #3B5998;
+}
+
+.uki-dataTable-row_selected + .uki-dataTable-row_selected .uki-dataTable-cell {
+  border-top: none;
+  padding-top: 2px;
+}
+
+.uki-dataList_blured .uki-dataTable-row_selected {
+  background-color: #CCC;
+  color: #000;
+}
+
+.uki-dataList_blured .uki-dataTable-row_selected .uki-dataTable-cell {
+  border-color: #AAA;
+}
+
+
+.uki-dataTable-wrap {
+  width: 100%;
+}
+
+.uki-dataTable-cell_number {
+  text-align: right;
+}
+
+.uki-dataTable-header-container {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  z-index: 100;
+  position: relative;
+  background-color: #EFEFEF;
+  border-bottom: 1px solid #999;
+  overflow: hidden;
+  cursor: default;
+}
+
+.uki-dataTable-header-cell {
+  margin: 0;
+  border-right: 1px solid #CCC;
+  padding: 0 4px 0 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.uki-dataTable-header-wrap {
+  position: relative;
+}
+
+.uki-dataTable-header-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 2px 0;
+  height: 14px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.uki-dataTable-resizer {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  width: 5px;
+  top: 0;
+  right: -7px;
+  height: 100%;
+  text-indent: 1em;
+  cursor: ew-resize;
+  cursor: col-resize;
+}
+
+.uki-dataTable-header-cell_resizable .uki-dataTable-resizer {
+  display: block;
+}
+
+.uki-dataTable-spacer {
+  padding-left: 0;
+  padding-right: 0;
+}
